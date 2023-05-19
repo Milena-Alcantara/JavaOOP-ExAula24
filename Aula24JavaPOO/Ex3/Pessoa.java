@@ -30,6 +30,7 @@ public class Pessoa {
 
     public void envelhecer() {
         idade++;
+        crescer();
     }
 
     public void setAltura(double alteracao) {
@@ -37,6 +38,7 @@ public class Pessoa {
     }
 
     public void crescer(){
+
         for (int i = 1;  idade<21; i++) {
             setAltura(0.05);
             envelhecer();

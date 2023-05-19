@@ -7,11 +7,12 @@ public class ContaCorrente {
     private String nomeCorrentista;
     private int numeroConta;
     private double saldo;
-    public double valorCliente;
+    private double valorCliente;
     public ContaCorrente(String nome,int numero, double saldo){
         this.nomeCorrentista = nome;
         this.numeroConta = numero;
         this.saldo = saldo;
+        this.valorCliente = valorCliente;
     }
 
     public void verificarOpcaoUser(int opcao){
@@ -32,7 +33,6 @@ public class ContaCorrente {
     }
     }
     public void setSaldo(double valorCliente){
-        this.valorCliente = valorCliente;
         saldo+=valorCliente;
     }
     public void sacarDinheiro(){
@@ -52,6 +52,7 @@ public class ContaCorrente {
         return numeroConta;
     }
     public double getSaldo(){
+        System.out.println("Seu saldo atual: "+ saldo);
         return saldo;
     }
 }

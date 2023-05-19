@@ -9,7 +9,7 @@ public class Main {
         System.out.println(pessoa1.getPeso());
         System.out.println(pessoa1.getAltura());
 
-        pessoa1.crescer();
+    pessoa1.envelhecer();
 
         }
 
